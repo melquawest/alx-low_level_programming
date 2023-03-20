@@ -1,0 +1,29 @@
+
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
+/**
+ * C program to tell whether a
+ * number is negaive or positive
+ */
+int main(void)
+{
+	int n;
+
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	/* If condition */
+
+	if (n > 0)
+	  {
+	    printf("Is positive");
+	  }
+	else if (n == 0)
+	  {
+	    printf("Is zero");
+	  }
+	else
+	  printf("Is negative");
+
+	return (0);
+}
