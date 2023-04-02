@@ -8,9 +8,9 @@
 int main(void)
 {
 int i;
+
+printf("Infinite loop incoming :(\n");
 /**
-* infiniteloo(out)p - printf("Infinite loop incoming :(\n");
-*
 * i = 0; - infinite loop commented out
 *
 * while (i < 10)
