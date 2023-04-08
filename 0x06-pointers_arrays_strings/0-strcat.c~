@@ -1,0 +1,20 @@
+#include "main.h"
+/**
+ * *_strcat -  function that concatenates two strings
+ * @dest:Move pointer to the end of string
+ * @src:To copy the source string to the end of the destination string
+ * Return: The concatenated string
+ */
+char *_strcat(char *dest, char *src)
+{
+while (*dest)
+{
+dest++;
+}
+while (*src)
+{
+*dest++ = *src++;
+}   
+*dest = '\0';
+ return (dest);
+}
