@@ -1,0 +1,22 @@
+#include "main.h"
+#include <stddef.h>
+#include <string.h>
+/**
+ * _strspn - A function that gets the length
+ * of a prefix substring
+ * @s: A string to search
+ * @accept: Prefix to measure
+ * Return: The number of bytes in s
+ */
+
+unsigned int _strspn(char *s, char *accept)
+{
+unsigned int bytes = 0;
+
+while (*s != '\0' && strchr(accept, *s) != NULL)
+{
+bytes++;
+s++;
+}
+return (bytes);
+}

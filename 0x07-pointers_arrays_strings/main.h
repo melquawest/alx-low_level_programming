@@ -1,5 +1,7 @@
 #ifndef main_h
 #define main_h
+#include <stddef.h>
+#include <string.h>
 
 int _putchar(char);
 char *_memset(char *s, char b, unsigned int n);
