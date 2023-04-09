@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * _strpbrk - 
+ * _strpbrk - Afunction that searches a string
+ * for any of a set of bytes
  * @s: A function that searches a string
  * for any of a set of bytes
  * @accept: Any of the bytes in the string
@@ -15,11 +16,12 @@ while (*s != '\0')
 {
 for (p = accept; *p != '\0'; ++p)
 {
-if (*s == *p) {
-return s;
+if (*s == *p)
+{
+return (s);
 }
 }
 ++s;
 }
-return NULL;
+return (NULL);
 }
